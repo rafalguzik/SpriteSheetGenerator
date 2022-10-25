@@ -1,8 +1,14 @@
-##Source code for the sprite sheet generator explained in  as as
-https://minzkraut.com/2016/11/23/making-a-simple-spritesheet-generator-in-python/
+> Fork of [JanGross/SpriteSheetGenerator](https://github.com/JanGross/SpriteSheetGenerator)
 
-##Usage:    
-- Copy all your single frames into "frames/"  
-- Optionally change `max_frames_row` on line 3 (How many frames until a linebreak happens)  asas
-- Run `python2.7 createSpriteSheet.py`   
-- Enjoy the sprite sheet that appeared in the folder  
+# Spitesheet Generator
+Combines multiple images into one. 
+
+## Additional functionality added upon the fork
+
+- Added ability to define folder the source images should be taken from (parameter *source_folder*)
+- Added ability to resize source images on output image (parameters *resized_width* and *resized_height*)
+- Added ability to crop source images (parameter *crop*)
+
+## How to use:
+
+> python3 createSpriteSheet.py <source_folder> <resized_width> <resized_height> <crop>
